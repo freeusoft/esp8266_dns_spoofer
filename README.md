@@ -7,3 +7,4 @@
 5. Open http://spoofer.local or by assigned ip
 6. Configure Upstream DNS Server (8.8.8.8 by default)
 7. Configure spoofed dns records (max 10 records)
+8. Configure DNS server on desired device (PC or Game console) with served DNS server by esp8266
