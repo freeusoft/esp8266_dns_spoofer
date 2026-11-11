@@ -1,6 +1,6 @@
 # esp8266_dns_spoofer
 
-1. Compile and Flash ESP8266 with PlatformIO
+1. Compile with PlatformIO and Flash ESP8266 (or flash precompiled firmware.bin with any available esp8266 online flasher like https://esptool.spacehuhn.com/)
 2. Boot ESP8266, connect your smartphone or PC to AccessPoint: spoofer/spoofer123456
 3. Open Captive Portal on http://192.168.4.1
 4. Configure WiFi network and reboot ESP8266
