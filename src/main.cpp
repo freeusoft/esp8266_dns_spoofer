@@ -163,7 +163,7 @@ String getPage() {
   page += "</style></head><body>";
   page += "<div class=\"container\">";
   page += "<h1>DNS Spoofer Control Panel</h1>";
-  page += "<div class=\"info\"><strong>Device:</strong> spoofer.local<br><strong>Mode:</strong> DNS Server Active<br><strong>Upstream DNS:</strong> " + String(wifiSettings.upstreamDNS) + "<br><strong>Records:</strong> " + String(hostCount) + " / " + String(MAX_HOSTS) + "</div>";
+  page += "<div class=\"info\"><strong>Device:</strong> spoofer.local<br><strong>IP Address:</strong> " + WiFi.localIP().toString() + "<br><strong>Mode:</strong> DNS Server Active<br><strong>Upstream DNS:</strong> " + String(wifiSettings.upstreamDNS) + "<br><strong>Records:</strong> " + String(hostCount) + " / " + String(MAX_HOSTS) + "</div>";
   
   page += "<div class=\"card\"><h2>Add New Host</h2>";
   page += "<form id=\"addForm\">";
@@ -271,6 +271,7 @@ String getCaptivePortalPage() {
   
   page += "<div class=\"info\">";
   page += "<strong>Device:</strong> spoofer<br>";
+  page += "<strong>IP Address:</strong> " + WiFi.softAPIP().toString() + "<br>";
   page += "<strong>AP Password:</strong> spoofer123456<br>";
   page += "<strong>Status:</strong> <span id=\"connectionStatus\">Not connected</span><br>";
   page += "<strong>Current Upstream DNS:</strong> <span id=\"currentDNS\">" + String(wifiSettings.upstreamDNS) + "</span>";
